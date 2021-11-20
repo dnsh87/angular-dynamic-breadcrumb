@@ -1,0 +1,13 @@
+<a [routerLink]="['home']">Home</a> <br />
+<a [routerLink]="['product']">Product</a> <br />
+<a
+  [routerLink]="['product', 'types', '4']"
+  [queryParams]="{ filter: 'new' }"
+  queryParamsHandling="merge"
+  >Product/Type</a
+>
+<br />
+<a [routerLink]="['product', 'types', '4', 'new']">Product/Type/New</a> <br />
+
+<app-breadcrumb></app-breadcrumb>
+<router-outlet></router-outlet>
